@@ -1,4 +1,4 @@
-function [vec] = ScanGrid(grid)
+function vec = ScanGrid(grid)
 %This function converts a mxn array into a m*n length vector
 [m,n] = size(grid);
 scan = zeros(m * n, 1);

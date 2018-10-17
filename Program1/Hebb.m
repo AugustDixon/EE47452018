@@ -5,6 +5,7 @@ function [w, b] = Hebb(p)
 t = p;
 p = cat(1, p, zeros(m, 1) + 1);
 wb = t * p.';
-b = w(
+b = wb(:,end);
+w = wb(:, 1:(end - 1));
 end
 
