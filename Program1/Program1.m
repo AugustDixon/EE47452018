@@ -81,7 +81,6 @@ numvec0_6 = cat(2, numvec0_5, numvec6);
 [wp0_5, bp0_5] = Pseudo(numvec0_5);
 [wp0_6, bp0_6] = Pseudo(numvec0_6);
 
-
 %Test
 errorh = zeros(6, 3);
 errorp = zeros(6, 3);
@@ -125,9 +124,8 @@ for i = 1:6
     end
 end
 
-
-
-
+Plots(errorh, errorp);
+Table(errorh, errorp);
 
 %Function definitions
 
